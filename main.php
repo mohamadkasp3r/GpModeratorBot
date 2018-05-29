@@ -799,11 +799,10 @@ Telegam('sendmessage',[
  ]);
  }
 }
-elseif($reply && $textmassage=="/unpin"  && $status == "creator"){
+elseif($textmassage=="/unpin"  && $status == "creator"){
 if ($chattype == 'group' | $chattype == 'supergroup'){
  Telegam('unpinChatMessage',[
-    'chat_id'=>$chat_id,
-    'message_id'=>$replymessageid
+    'chat_id'=>$chat_id
       ]);
 Telegam('sendmessage',[
  'chat_id'=>$chat_id,
