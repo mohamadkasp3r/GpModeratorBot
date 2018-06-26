@@ -871,7 +871,7 @@ elseif ($update->inline_qurey->qurey == "ads") {
                     [
                         ['text' => "اشتراک با دیگران", 'switch_inline_query' => 'ads']
                     ]
-                ]
+                ]j
             ]
         ]])
     ]);
